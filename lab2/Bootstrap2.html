@@ -48,10 +48,48 @@
     </article>
 
   
-    <div class="container p-5">
-      <a type="button" class="btn btn-primary col-3" href="Addpost.html"> + Add Post</a>
-    </div>
+    <div class="container mb-4">
+      <div class=" row">
 
+        <div class="col-4 ">
+          <a type="button" class="btn btn-primary col-12" href="Addpost.html"> + Add Post</a>
+        </div>
+    
+    
+        <div class="col-4 ">
+          <a type="button" class="btn btn-success col-12 " data-bs-toggle="modal" data-bs-target="#exampleModal" > + Add Category</a>
+        </div>
+
+
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header bg-success text-white">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Add Category </h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+
+              <div class="m-3">
+                <label for="category" class="form-label">Category</label>
+                <input type="text" class="form-control" id="category" >
+              </div>
+
+              <div class="modal-footer">
+                <button type="button" class="btn btn-success">Save changes</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-4 ">
+          <a type="button" class="btn btn-warning col-12" > + Add User</a>
+        </div>
+
+      </div>
+
+      
+    </div>
+    
 
 
     <div class="container">
