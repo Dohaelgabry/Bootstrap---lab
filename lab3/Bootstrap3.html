@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="./node_modules/bootstrap/dist/css/bootstrap.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <style>
+      .col-4,
+      .col-8 {
+        padding: 0;
+      }
+      .buttons {
+        margin-left: 0;
+        margin-right: 0;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container bg-dark text-white">
+      <div class="row">
+        <!-- image -->
+        <div class="col-4">
+          <img class="img-fluid w-100 h-100" src="./1.jpeg" />
+        </div>
+
+        <!-- 3 section -->
+        <article class="col-8">
+          <!--1-section communication -->
+          <section
+            class="row align-items-center justify-content-around p-5 fs-2"
+          >
+            <h1 class="col-4">John Doe</h1>
+            <i class="fa-brands fa-twitter col-1"></i>
+            <i class="fa-brands fa-facebook col-1"></i>
+            <i class="fa-brands fa-instagram col-1"></i>
+            <i class="fa-brands fa-github col-1"></i>
+          </section>
+
+          <!--2-section Experience -->
+          <section>
+            <div class="bg-black p-4">
+              <p>Experience Full Stack Web Developer</p>
+            </div>
+          </section>
+          <!--3-section Drop-down menu -->
+          <section class="row buttons">
+            <!--button 1  -->
+            <button
+              class="btn btn-primary col-3 rounded-0 d-flex flex-column align-items-center p-5"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#home"
+              id="butn1"
+              aria-expanded="false"
+              aria-controls="collapseExample"
+            >
+              <i class="fa-solid fa-house"></i>Home
+            </button>
+
+            <!--button 2 -->
+            <button
+              class="btn btn-success col-3 rounded-0 d-flex flex-column align-items-center p-5"
+              type="button"
+              id="butn2"
+              data-bs-toggle="collapse"
+              data-bs-target="#Resume"
+              aria-expanded="false"
+              aria-controls="collapseExample"
+            >
+              <i class="fa-solid fa-graduation-cap"></i> Resume
+            </button>
+
+            <!--button 3 -->
+            <button
+              class="btn btn-warning col-3 rounded-0 d-flex flex-column align-items-center p-5"
+              type="button"
+              data-bs-toggle="collapse"
+              id="butn3"
+              data-bs-target="#Work"
+              aria-expanded="false"
+              aria-controls="collapseExample"
+            >
+              <i class="fa-solid fa-folder-open"></i> Work
+            </button>
+
+            <!--button 4 -->
+            <button
+              class="btn btn-danger col-3 rounded-0 d-flex flex-column align-items-center p-5"
+              type="button"
+              data-bs-toggle="collapse"
+              id="butn4"
+              data-bs-target="#Contact"
+              aria-expanded="false"
+              aria-controls="collapseExample"
+            >
+              <i class="fa-solid fa-envelope"></i> Contact
+            </button>
+          </section>
+        </article>
+        <!--button 5 Download Resume -->
+        <div class="p-5">
+          <button class="btn btn-dark text-white btn-outline-light">
+            <i class="fa-solid fa-cloud"></i> Download Resume
+          </button>
+        </div>
+      </div>
+    </div>
+    <!--accordion  -->
+
+    <!--accordion home -->
+    <div
+      class="container text-white bg-primary py-5 collapse"
+      data-parent="#accordionExample"
+      id="home"
+    >
+      <h1>Welcome To My Page</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta,
+        inventore!
+      </p>
+    </div>
+
+    <!--accordion Resume -->
+    <div
+      class="container text-white bg-success py-5 collapse"
+      data-parent="#accordionExample"
+      id="Resume"
+    >
+      <h1>Welcome To My Page</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta,
+        inventore!
+      </p>
+    </div>
+    <!--accordion Work -->
+    <div
+      class="container text-white bg-warning py-5 collapse"
+      data-parent="#accordionExample"
+      id="Work"
+    >
+      <h1>Welcome To My Page</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta,
+        inventore!
+      </p>
+    </div>
+
+    <!--accordion Contact -->
+    <div
+      class="container text-white bg-danger py-5 collapse"
+      data-parent="#accordionExample"
+      id="Contact"
+    >
+      <h1>Welcome To My Page</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta,
+        inventore!
+      </p>
+    </div>
+
+    <!--script-->
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="./js.js"></script>
+  </body>
+</html>
